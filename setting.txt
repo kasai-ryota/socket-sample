@@ -1,0 +1,18 @@
+eslintをインストール
+→ javascriptを静的解析してくれる凄いやつ
+npm install --save-dev eslint-plugin-node
+→ プロジェクト直下で実行。eslintのnode対応版を追加することができる
+.eslintrc.jsonをプロジェクト直下に追加
+→ こいつに基づいてeslintが機能する。とりあえずこれでよし
+{
+    "extends": ["eslint:recommended"],
+    "plugins": ["node"],
+    "env": {
+        "es6": true,
+        "node": true
+    }
+}
+
+
+プロジェクトはこの手順で作成
+https://socket.io/get-started/chat/
